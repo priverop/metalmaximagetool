@@ -23,10 +23,10 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
-namespace Texim.MetalMax
+namespace MMImageTool
 {
     using Yarhl.FileFormat;
-    using Media.Image;
+    using Texim.Media.Image;
 
     public class MmTex : Format
     {
