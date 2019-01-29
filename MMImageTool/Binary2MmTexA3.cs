@@ -51,15 +51,15 @@ namespace MMImageTool
                 switch (header) {
                     case "TXIF":
                         texture.UnknownSize = reader.ReadUInt32();
-                        reader.ReadUInt32(); // num pixels
+                        int pixels = reader.ReadInt32(); // num pixels
                         texture.Unknown = reader.ReadUInt32();
                         reader.ReadUInt32(); // palette size
                         texture.Width = reader.ReadUInt16();
                         texture.Height = reader.ReadUInt16();
                         texture.NumImages = reader.ReadInt32();
                         texture.Pixels = new PixelArray {
-                            Width = texture.Width,
-                            Height = texture.NumImages * texture.Height
+                            Width = pixels / texture.Height,
+                            Height = texture.Height
                         };
                         break;
 

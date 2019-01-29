@@ -52,10 +52,10 @@
     <Reference Include="Yarhl.Media">
       <HintPath>packages\Yarhl.Media.2.0.0-alpha.2\lib\netstandard2.0\Yarhl.Media.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="Texim">
       <HintPath>lib\Texim.dll</HintPath>
     </Reference>
-    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
